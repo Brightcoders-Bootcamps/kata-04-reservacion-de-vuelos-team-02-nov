@@ -1,7 +1,7 @@
 import React from 'react';
-import {View, Text, Button, TouchableOpacity, Image} from 'react-native';
-import {styles} from '../../styles/SignUpStyles';
-import GoogleIcon from '../../assets/images/google.png';
+import {View, Text, TouchableOpacity, Image} from 'react-native';
+import {styles} from '../../../styles/SignUpStyles';
+import GoogleIcon from '../../../assets/images/google.png';
 const SignUpButtons = () => {
   return (
     <View style={styles.btnSignupContainer}>
@@ -18,12 +18,12 @@ const SignUpButtons = () => {
           Sign Up with Google
         </Text>
       </TouchableOpacity>
-      <Text style={styles.loginTextContainer}>
-        Already have an account?{' '}
+      <View style={styles.loginTextContainer}>
+        <Text>Already have an account?</Text>
         <TouchableOpacity>
           <Text style={styles.LogInText}> Log In</Text>
         </TouchableOpacity>
-      </Text>
+      </View>
     </View>
   );
 };

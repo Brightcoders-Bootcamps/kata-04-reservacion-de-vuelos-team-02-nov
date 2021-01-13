@@ -1,12 +1,12 @@
-import React from 'react';
+import {colors} from '../Colors';
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   title: {
     fontSize: 20,
-    color: '#2D02FF',
+    color: colors.Purple,
     fontWeight: 'bold',
-    marginBottom: 20,
+    marginBottom: 10,
   },
   button: {
     height: 40,
@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
     marginTop: 15,
   },
   btnSignup: {
-    backgroundColor: '#b6b7ba',
+    backgroundColor: colors.ligthGray,
     padding: 12,
     borderRadius: 10,
     marginBottom: 5,
@@ -44,7 +44,7 @@ export const styles = StyleSheet.create({
   },
   btnSignupText: {
     textAlign: 'center',
-    color: '#FFF',
+    color: colors.white,
     fontWeight: 'bold',
     fontSize: 18,
   },
@@ -52,18 +52,21 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 10,
     marginTop: 10,
-    color: '#b6b7ba',
+    color: colors.ligthGray,
   },
   LogInText: {
-    color: 'blue'
+    color: colors.Purple,
   },
   loginTextContainer: {
     textAlign: 'center',
-    marginTop: 20, 
+    marginTop: 10,
+    flexDirection: 'row',
+    justifyContent: 'center'
   },
   googleIcon: {
     width: 20,
     height: 20,
+    marginTop: 3,
   },
   characters: {
     marginBottom: 20,
@@ -71,4 +74,5 @@ export const styles = StyleSheet.create({
   checkboxFather: {
     marginBottom: 15,
   },
+  
 });
