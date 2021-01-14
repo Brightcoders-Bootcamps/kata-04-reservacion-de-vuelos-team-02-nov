@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import {Text, Button, TextInput} from 'react-native';
 import {GoogleSignin} from '@react-native-community/google-signin';
-import SignUp from './screens/SignUp';
+import MyFlights from './screens/MyFlights';
 
 const App = () => {
   useEffect(() => {
@@ -12,7 +12,7 @@ const App = () => {
   }, []);
   return (
     <>
-      <SignUp />
+      <MyFlights />
     </>
   );
 };
