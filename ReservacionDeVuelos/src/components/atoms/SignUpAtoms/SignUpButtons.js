@@ -2,11 +2,12 @@ import React from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import {styles} from '../../../styles/SignUpStyles';
 import GoogleIcon from '../../../assets/images/google.png';
+import {SignUpConstants} from '../../../utils/Constants';
 const SignUpButtons = () => {
   return (
     <View style={styles.btnSignupContainer}>
       <TouchableOpacity style={styles.btnSignup}>
-        <Text style={styles.btnSignupText}>Sign Up</Text>
+        <Text style={styles.btnSignupText}>{SignUpConstants.SignUpButton}</Text>
       </TouchableOpacity>
       <Text style={styles.or}>or</Text>
       <TouchableOpacity style={styles.btnSignup}>
@@ -15,13 +16,13 @@ const SignUpButtons = () => {
           style={[styles.googleIcon, {marginLeft: -75}]}
         />
         <Text style={[styles.btnSignupText, {marginLeft: 50}]}>
-          Sign Up with Google
+          {SignUpConstants.GoogleSignUpButton}
         </Text>
       </TouchableOpacity>
       <View style={styles.loginTextContainer}>
-        <Text>Already have an account?</Text>
+        <Text>{SignUpConstants.HasAnAccount}</Text>
         <TouchableOpacity>
-          <Text style={styles.LogInText}> Log In</Text>
+          <Text style={styles.LogInText}>{SignUpConstants.LogIn}</Text>
         </TouchableOpacity>
       </View>
     </View>

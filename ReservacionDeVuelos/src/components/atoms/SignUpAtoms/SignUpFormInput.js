@@ -1,6 +1,7 @@
 import React from 'react';
 import {Text, TextInput} from 'react-native';
 import {styles} from '../../../styles/SignUpStyles';
+import {SignUpConstants} from '../../../utils/Constants';
 const SignUpFormInput = (props) => {
   const {inputName} = props;
 
@@ -13,7 +14,7 @@ const SignUpFormInput = (props) => {
       />
       {inputName === 'Password *' && (
         <Text style={styles.characters}>
-          Use 8 or more characters with a mix of letters, numbers, and sumbols
+          {SignUpConstants.CharactersMessage}
         </Text>
       )}
     </>
