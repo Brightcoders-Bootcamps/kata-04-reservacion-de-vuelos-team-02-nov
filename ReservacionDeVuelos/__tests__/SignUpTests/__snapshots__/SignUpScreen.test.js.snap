@@ -1,0 +1,356 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "margin": 10,
+      "padding": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#2D02FF",
+        "fontSize": 20,
+        "fontWeight": "bold",
+        "marginBottom": 10,
+      }
+    }
+  >
+    Sign Up
+  </Text>
+  <View>
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "marginBottom": 10,
+        }
+      }
+    >
+      First Name
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      rejectResponderTermination={true}
+      secureTextEntry={false}
+      style={
+        Object {
+          "borderColor": "gray",
+          "borderWidth": 1,
+          "height": 40,
+          "marginBottom": 10,
+        }
+      }
+      underlineColorAndroid="transparent"
+    />
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "marginBottom": 10,
+        }
+      }
+    >
+      Email *
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      rejectResponderTermination={true}
+      secureTextEntry={false}
+      style={
+        Object {
+          "borderColor": "gray",
+          "borderWidth": 1,
+          "height": 40,
+          "marginBottom": 10,
+        }
+      }
+      underlineColorAndroid="transparent"
+    />
+    <Text
+      style={
+        Object {
+          "fontSize": 16,
+          "marginBottom": 10,
+        }
+      }
+    >
+      Password *
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      rejectResponderTermination={true}
+      secureTextEntry={true}
+      style={
+        Object {
+          "borderColor": "gray",
+          "borderWidth": 1,
+          "height": 40,
+          "marginBottom": 10,
+        }
+      }
+      underlineColorAndroid="transparent"
+    />
+    <Text
+      style={
+        Object {
+          "marginBottom": 20,
+        }
+      }
+    >
+      Use 8 or more characters with a mix of letters, numbers, and simbols.
+    </Text>
+    <View
+      style={
+        Object {
+          "marginBottom": 15,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginTop": 5,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "marginTop": 5,
+            }
+          }
+        >
+          <View
+            pointerEvents="auto"
+          >
+            <RNCCheckbox
+              forwardedRef={null}
+              onValueChange={[Function]}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "height": 32,
+                    "width": 32,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <Text>
+            I agree to the Terms and Privacy Policy.
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginTop": 5,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "flex-start",
+              "marginTop": 5,
+            }
+          }
+        >
+          <View
+            pointerEvents="auto"
+          >
+            <RNCCheckbox
+              forwardedRef={null}
+              onValueChange={[Function]}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "height": 32,
+                    "width": 32,
+                  },
+                  undefined,
+                ]
+              }
+            />
+          </View>
+          <Text>
+            Subscribe for select product updates.
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "marginTop": 15,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#b6b7ba",
+          "borderRadius": 10,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginBottom": 5,
+          "opacity": 1,
+          "padding": 12,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#FFF",
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "textAlign": "center",
+          }
+        }
+      >
+        Sign Up
+      </Text>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#b6b7ba",
+          "marginBottom": 10,
+          "marginTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      or
+    </Text>
+    <View
+      accessible={true}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#b6b7ba",
+          "borderRadius": 10,
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginBottom": 5,
+          "opacity": 1,
+          "padding": 12,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../src/assets/images/google.png",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "height": 20,
+              "marginTop": 3,
+              "width": 20,
+            },
+            Object {
+              "marginLeft": -75,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#FFF",
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "textAlign": "center",
+            },
+            Object {
+              "marginLeft": 50,
+            },
+          ]
+        }
+      >
+        Sign Up with Google
+      </Text>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginTop": 10,
+          "textAlign": "center",
+        }
+      }
+    >
+      <Text>
+        Already have an account?
+      </Text>
+      <View
+        accessible={true}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#2D02FF",
+            }
+          }
+        >
+          Log In
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
