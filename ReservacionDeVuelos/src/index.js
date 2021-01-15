@@ -1,5 +1,4 @@
 import React, {useEffect} from 'react';
-import {Text, Button, TextInput} from 'react-native';
 import {GoogleSignin} from '@react-native-community/google-signin';
 import MyFlights from './screens/MyFlights';
 

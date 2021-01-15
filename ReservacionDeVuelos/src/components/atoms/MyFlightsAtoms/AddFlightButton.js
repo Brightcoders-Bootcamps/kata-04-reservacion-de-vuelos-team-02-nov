@@ -1,12 +1,12 @@
-import React from 'react'
-import { View, Text } from 'react-native'
-
+import React from 'react';
+import {TouchableOpacity} from 'react-native';
+import PlusIcon from 'react-native-vector-icons/Entypo';
+import {styles} from '../../../styles/MyFlightsStyles';
+import {colors} from '../../../styles/Colors'
 const AddFlightButton = () => {
-    return (
-        <View>
-            <Text></Text>
-        </View>
-    )
-}
+  return <TouchableOpacity style={styles.circleButton}>
+      <PlusIcon name='plus' color={colors.white} size={50}/>
+  </TouchableOpacity>;
+};
 
-export default AddFlightButton
+export default AddFlightButton;

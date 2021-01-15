@@ -49,10 +49,28 @@ const DATA = [
     date: 'September 3, 2021',
     passengers: 5,
   },
+  {
+    id: '6',
+    originCountry: 'BEG',
+    destinyCountry: 'AMS',
+    originCity: 'dsfsf',
+    destinyCity: 'fdgdg',
+    date: 'September 3, 2021',
+    passengers: 5,
+  },
+  {
+    id: '7',
+    originCountry: 'BEG',
+    destinyCountry: 'AMS',
+    originCity: 'dsfsf',
+    destinyCity: 'fdgdg',
+    date: 'September 3, 2021',
+    passengers: 5,
+  },
 ];
 
 const Item = ({item}) => (
-  <View>
+  <View style={styles.fatherContainer}>
     <View style={styles.TopContainer}>
       <Text style={styles.country}>{item.originCountry}</Text>
       <PlaneIcon name="plane" color={colors.Purple} size={25} />
@@ -63,11 +81,11 @@ const Item = ({item}) => (
       <Text style={styles.city}>{item.destinyCity}</Text>
     </View>
     <View style={styles.bottomContainer}>
-      <Text>{item.date}</Text>
-      <Text>{item.passengers} passengers</Text>
+      <Text style={styles.dateTitle}>{item.date}</Text>
+      <Text style={styles.passengersTitle}>{item.passengers} passengers</Text>
     </View>
-    <View style={styles.border}/>
-</View>
+    <View style={styles.border} />
+  </View>
 );
 
 const FlightsList = () => {
@@ -75,6 +93,7 @@ const FlightsList = () => {
   return (
     <View style={styles.ListContainer}>
       <FlatList
+        showsVerticalScrollIndicator={false}
         data={DATA}
         keyExtractor={(flight) => flight.id}
         renderItem={renderItem}
