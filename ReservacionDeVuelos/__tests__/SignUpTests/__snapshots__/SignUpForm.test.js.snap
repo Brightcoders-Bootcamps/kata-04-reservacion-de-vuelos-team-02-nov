@@ -1,0 +1,181 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View>
+  <Text
+    style={
+      Object {
+        "fontSize": 16,
+        "marginBottom": 10,
+      }
+    }
+  >
+    First Name
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    rejectResponderTermination={true}
+    secureTextEntry={false}
+    style={
+      Object {
+        "borderColor": "gray",
+        "borderWidth": 1,
+        "height": 40,
+        "marginBottom": 10,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    style={
+      Object {
+        "fontSize": 16,
+        "marginBottom": 10,
+      }
+    }
+  >
+    Email *
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    rejectResponderTermination={true}
+    secureTextEntry={false}
+    style={
+      Object {
+        "borderColor": "gray",
+        "borderWidth": 1,
+        "height": 40,
+        "marginBottom": 10,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    style={
+      Object {
+        "fontSize": 16,
+        "marginBottom": 10,
+      }
+    }
+  >
+    Password *
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    rejectResponderTermination={true}
+    secureTextEntry={true}
+    style={
+      Object {
+        "borderColor": "gray",
+        "borderWidth": 1,
+        "height": 40,
+        "marginBottom": 10,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <Text
+    style={
+      Object {
+        "marginBottom": 20,
+      }
+    }
+  >
+    Use 8 or more characters with a mix of letters, numbers, and simbols.
+  </Text>
+  <View
+    style={
+      Object {
+        "marginBottom": 15,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+          "marginTop": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginTop": 5,
+          }
+        }
+      >
+        <View
+          pointerEvents="auto"
+        >
+          <RNCCheckbox
+            forwardedRef={null}
+            onValueChange={[Function]}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "height": 32,
+                  "width": 32,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+        <Text>
+          I agree to the Terms and Privacy Policy.
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "flex-start",
+          "marginTop": 5,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "marginTop": 5,
+          }
+        }
+      >
+        <View
+          pointerEvents="auto"
+        >
+          <RNCCheckbox
+            forwardedRef={null}
+            onValueChange={[Function]}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "height": 32,
+                  "width": 32,
+                },
+                undefined,
+              ]
+            }
+          />
+        </View>
+        <Text>
+          Subscribe for select product updates.
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

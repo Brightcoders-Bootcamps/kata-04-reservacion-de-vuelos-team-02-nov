@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <Text
+    style={
+      Object {
+        "fontSize": 16,
+        "marginBottom": 10,
+      }
+    }
+  />,
+  <TextInput
+    allowFontScaling={true}
+    rejectResponderTermination={true}
+    secureTextEntry={false}
+    style={
+      Object {
+        "borderColor": "gray",
+        "borderWidth": 1,
+        "height": 40,
+        "marginBottom": 10,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />,
+]
+`;
