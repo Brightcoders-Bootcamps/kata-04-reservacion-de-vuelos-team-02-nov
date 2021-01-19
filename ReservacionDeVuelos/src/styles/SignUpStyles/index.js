@@ -35,7 +35,7 @@ export const styles = StyleSheet.create({
     marginTop: 15,
   },
   btnSignup: {
-    backgroundColor: colors.ligthGray,
+    backgroundColor: colors.Purple,
     padding: 12,
     borderRadius: 10,
     marginBottom: 5,
@@ -61,7 +61,7 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     marginTop: 10,
     flexDirection: 'row',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   googleIcon: {
     width: 20,
@@ -74,5 +74,7 @@ export const styles = StyleSheet.create({
   checkboxFather: {
     marginBottom: 15,
   },
-  
+  errorMessage: {
+    color: colors.red,
+  },
 });

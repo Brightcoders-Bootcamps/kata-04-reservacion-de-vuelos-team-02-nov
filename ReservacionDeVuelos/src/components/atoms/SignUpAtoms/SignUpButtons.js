@@ -1,30 +1,27 @@
-import React from 'react';
-import {View, Text, TouchableOpacity, Image} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {View, Text} from 'react-native';
 import {styles} from '../../../styles/SignUpStyles';
-import GoogleIcon from '../../../assets/images/google.png';
+import GoogleSignUp from './GoogleSignUp';
 import {SignUpConstants} from '../../../utils/Constants';
-const SignUpButtons = () => {
+import SignUpButton from './SignUpButton';
+import {signUpSubmit} from '../../../utils/Functions';
+import LoginMessage from './LoginMessage';
+const SignUpButtons = ({validationValues, formValues, validateInputs}) => {
+  const [isButtonEnabled, setIsButtonEnabled] = useState(false);
+  useEffect(() => {
+    const res = validateInputs(validationValues);
+    setIsButtonEnabled(res);
+  }, [validationValues]);
   return (
-    <View style={styles.btnSignupContainer}>
-      <TouchableOpacity style={styles.btnSignup}>
-        <Text style={styles.btnSignupText}>{SignUpConstants.SignUpButton}</Text>
-      </TouchableOpacity>
-      <Text style={styles.or}>or</Text>
-      <TouchableOpacity style={styles.btnSignup}>
-        <Image
-          source={GoogleIcon}
-          style={[styles.googleIcon, {marginLeft: -75}]}
-        />
-        <Text style={[styles.btnSignupText, {marginLeft: 50}]}>
-          {SignUpConstants.GoogleSignUpButton}
-        </Text>
-      </TouchableOpacity>
-      <View style={styles.loginTextContainer}>
-        <Text>{SignUpConstants.HasAnAccount}</Text>
-        <TouchableOpacity>
-          <Text style={styles.LogInText}>{SignUpConstants.LogIn}</Text>
-        </TouchableOpacity>
-      </View>
+    <View style={styles.btnSignupContainer} testID="view">
+      <SignUpButton
+        isButtonEnabled={isButtonEnabled}
+        formValues={formValues}
+        signUpSubmit={signUpSubmit}
+      />
+      <Text style={styles.or}>{SignUpConstants.OR}</Text>
+      <GoogleSignUp />
+      <LoginMessage />
     </View>
   );
 };
