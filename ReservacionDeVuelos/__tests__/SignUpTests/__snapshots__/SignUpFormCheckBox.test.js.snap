@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Reders conrreclty snapshot 1`] = `
 <View
   style={
     Object {
@@ -10,25 +10,13 @@ exports[`renders correctly 1`] = `
       "marginTop": 5,
     }
   }
+  testID="view"
 >
-  <View
-    pointerEvents="auto"
-  >
-    <RNCCheckbox
-      forwardedRef={null}
-      onValueChange={[Function]}
-      style={
-        Array [
-          Object {
-            "backgroundColor": "transparent",
-            "height": 32,
-            "width": 32,
-          },
-          undefined,
-        ]
-      }
-    />
-  </View>
+  <ForwardRef(CheckBoxWithRef)
+    onValueChange={[Function]}
+    testID="checkBox"
+    value={false}
+  />
   <Text />
 </View>
 `;

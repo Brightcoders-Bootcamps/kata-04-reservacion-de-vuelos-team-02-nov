@@ -1,88 +1,81 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<View>
-  <Text
-    style={
+exports[`renders correclty snapshot 1`] = `
+<View
+  testID="signUpForm"
+>
+  <SignUpFormInput
+    errorMessage=" must be at least 3 characters."
+    formValues={
       Object {
-        "fontSize": 16,
-        "marginBottom": 10,
+        "email": "",
+        "name": "",
+        "password": "",
+        "termsCheckbox": false,
+        "updatesCheckbox": false,
+        "validEmail": true,
+        "validName": true,
+        "validPassword": true,
+        "validatedEmail": false,
+        "validatedName": false,
+        "validatedPassword": false,
       }
     }
-  >
-    First Name
-  </Text>
-  <TextInput
-    allowFontScaling={true}
-    rejectResponderTermination={true}
-    secureTextEntry={false}
-    style={
-      Object {
-        "borderColor": "gray",
-        "borderWidth": 1,
-        "height": 40,
-        "marginBottom": 10,
-      }
-    }
-    underlineColorAndroid="transparent"
+    handleChange={[Function]}
+    inputName="First Name"
+    isValidated={false}
+    setFormValues={[MockFunction]}
+    validation={true}
+    value=""
   />
-  <Text
-    style={
+  <SignUpFormInput
+    errorMessage="invalid Email format"
+    formValues={
       Object {
-        "fontSize": 16,
-        "marginBottom": 10,
+        "email": "",
+        "name": "",
+        "password": "",
+        "termsCheckbox": false,
+        "updatesCheckbox": false,
+        "validEmail": true,
+        "validName": true,
+        "validPassword": true,
+        "validatedEmail": false,
+        "validatedName": false,
+        "validatedPassword": false,
       }
     }
-  >
-    Email *
-  </Text>
-  <TextInput
-    allowFontScaling={true}
-    rejectResponderTermination={true}
-    secureTextEntry={false}
-    style={
-      Object {
-        "borderColor": "gray",
-        "borderWidth": 1,
-        "height": 40,
-        "marginBottom": 10,
-      }
-    }
-    underlineColorAndroid="transparent"
+    handleChange={[Function]}
+    inputName="Email *"
+    isValidated={false}
+    setFormValues={[MockFunction]}
+    validation={true}
+    value=""
   />
-  <Text
-    style={
+  <SignUpFormInput
+    errorMessage="must be at least 8 characters"
+    formValues={
       Object {
-        "fontSize": 16,
-        "marginBottom": 10,
+        "email": "",
+        "name": "",
+        "password": "",
+        "termsCheckbox": false,
+        "updatesCheckbox": false,
+        "validEmail": true,
+        "validName": true,
+        "validPassword": true,
+        "validatedEmail": false,
+        "validatedName": false,
+        "validatedPassword": false,
       }
     }
-  >
-    Password *
-  </Text>
-  <TextInput
-    allowFontScaling={true}
-    rejectResponderTermination={true}
-    secureTextEntry={true}
-    style={
-      Object {
-        "borderColor": "gray",
-        "borderWidth": 1,
-        "height": 40,
-        "marginBottom": 10,
-      }
-    }
-    underlineColorAndroid="transparent"
+    handleChange={[Function]}
+    inputName="Password *"
+    isValidated={false}
+    setFormValues={[MockFunction]}
+    validation={true}
+    value=""
   />
-  <Text
-    style={
-      Object {
-        "marginBottom": 20,
-      }
-    }
-  >
-    Use 8 or more characters with a mix of letters, numbers, and simbols.
-  </Text>
   <View
     style={
       Object {
@@ -90,92 +83,48 @@ exports[`renders correctly 1`] = `
       }
     }
   >
-    <View
-      style={
+    <SignUpFormCheckBox
+      checkBoxValue={false}
+      checkboxMessage="I agree to the Terms and Privacy Policy."
+      formValues={
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "flex-start",
-          "marginTop": 5,
+          "email": "",
+          "name": "",
+          "password": "",
+          "termsCheckbox": false,
+          "updatesCheckbox": false,
+          "validEmail": true,
+          "validName": true,
+          "validPassword": true,
+          "validatedEmail": false,
+          "validatedName": false,
+          "validatedPassword": false,
         }
       }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "flex-start",
-            "marginTop": 5,
-          }
-        }
-      >
-        <View
-          pointerEvents="auto"
-        >
-          <RNCCheckbox
-            forwardedRef={null}
-            onValueChange={[Function]}
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "transparent",
-                  "height": 32,
-                  "width": 32,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <Text>
-          I agree to the Terms and Privacy Policy.
-        </Text>
-      </View>
-    </View>
-    <View
-      style={
+      handleChange={[Function]}
+      setFormValues={[MockFunction]}
+    />
+    <SignUpFormCheckBox
+      checkBoxValue={false}
+      checkboxMessage="Subscribe for select product updates."
+      formValues={
         Object {
-          "alignItems": "center",
-          "flexDirection": "row",
-          "justifyContent": "flex-start",
-          "marginTop": 5,
+          "email": "",
+          "name": "",
+          "password": "",
+          "termsCheckbox": false,
+          "updatesCheckbox": false,
+          "validEmail": true,
+          "validName": true,
+          "validPassword": true,
+          "validatedEmail": false,
+          "validatedName": false,
+          "validatedPassword": false,
         }
       }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "flexDirection": "row",
-            "justifyContent": "flex-start",
-            "marginTop": 5,
-          }
-        }
-      >
-        <View
-          pointerEvents="auto"
-        >
-          <RNCCheckbox
-            forwardedRef={null}
-            onValueChange={[Function]}
-            style={
-              Array [
-                Object {
-                  "backgroundColor": "transparent",
-                  "height": 32,
-                  "width": 32,
-                },
-                undefined,
-              ]
-            }
-          />
-        </View>
-        <Text>
-          Subscribe for select product updates.
-        </Text>
-      </View>
-    </View>
+      handleChange={[Function]}
+      setFormValues={[MockFunction]}
+    />
   </View>
 </View>
 `;

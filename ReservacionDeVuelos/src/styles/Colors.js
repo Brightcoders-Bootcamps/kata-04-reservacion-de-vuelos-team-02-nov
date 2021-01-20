@@ -1,6 +1,8 @@
 export const colors = {
-    Purple: '#2D02FF',
-    ligthGray: '#b6b7ba',
-    white: '#FFF'
-
-}
+  Purple: '#6472ee',
+  ligthGray: '#b6b7ba',
+  white: '#FFF',
+  red: 'red',
+  black: 'black',
+  
+};

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-Array [
+exports[`renders correclty when inputName is "name" snapshot 1`] = `
+<View>
   <Text
     style={
       Object {
@@ -9,20 +9,31 @@ Array [
         "marginBottom": 10,
       }
     }
-  />,
-  <TextInput
+    testID="inputTitle"
+  >
+    First Name
+  </Text>
+  <Component
     allowFontScaling={true}
+    onChangeText={[Function]}
     rejectResponderTermination={true}
     secureTextEntry={false}
     style={
-      Object {
-        "borderColor": "gray",
-        "borderWidth": 1,
-        "height": 40,
-        "marginBottom": 10,
-      }
+      Array [
+        Object {
+          "borderColor": "gray",
+          "borderWidth": 1,
+          "height": 40,
+          "marginBottom": 10,
+        },
+        Object {
+          "borderColor": "black",
+        },
+      ]
     }
+    testID="input"
     underlineColorAndroid="transparent"
-  />,
-]
+    value=""
+  />
+</View>
 `;

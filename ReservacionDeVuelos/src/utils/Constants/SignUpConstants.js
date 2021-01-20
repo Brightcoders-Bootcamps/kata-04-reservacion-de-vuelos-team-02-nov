@@ -10,6 +10,10 @@ const SignUpButton = 'Sign Up';
 const GoogleSignUpButton = 'Sign Up with Google';
 const HasAnAccount = 'Already have an account?';
 const LogIn = 'Log In';
+const nameErrorMessage = ' must be at least 3 characters.';
+const emailErrorMessage = 'invalid Email format';
+const passwordErrorMessage = 'must be at least 8 characters';
+const OR = 'or'
 export const SignUpConstants = {
   SignUpTitle,
   NameInputTitle,
@@ -22,4 +26,9 @@ export const SignUpConstants = {
   GoogleSignUpButton,
   HasAnAccount,
   LogIn,
+  nameErrorMessage,
+  emailErrorMessage,
+  passwordErrorMessage,
+  OR
+  
 };
