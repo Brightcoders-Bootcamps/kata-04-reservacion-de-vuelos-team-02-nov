@@ -1,22 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Reders conrreclty snapshot 1`] = `
-<View
-  style={
-    Object {
-      "alignItems": "center",
-      "flexDirection": "row",
-      "justifyContent": "flex-start",
-      "marginTop": 5,
-    }
-  }
-  testID="view"
->
-  <ForwardRef(CheckBoxWithRef)
-    onValueChange={[Function]}
-    testID="checkBox"
-    value={false}
-  />
-  <Text />
-</View>
-`;
+exports[`Reders conrreclty snapshot 1`] = `ShallowWrapper {}`;
