@@ -1,13 +1,13 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import {styles} from '../../../styles/MyFlightsStyles';
-import {FlightsListConstants} from '../../../utils/Constants';
 
-const MyFlightsTitle = () => {
+
+const MyFlightsTitle = ({title}) => {
   return (
-    <View style={styles.titleContainer}>
-      <Text style={styles.myFlightsTitle}>
-        {FlightsListConstants.myFlightsTitle}
+    <View style={styles.titleContainer} testID='view'>
+      <Text style={styles.myFlightsTitle} testID='text'>
+        {title}
       </Text>
     </View>
   );

@@ -13,9 +13,9 @@ const GenericListItem = (props) => {
   } = props;
 
   return (
-    <View style={ContainerStyle}>
+    <View style={ContainerStyle} testID='view'>
       <Text style={TitleFont}>{Title}</Text>
-      {Icon && <PlaneIcon name={Icon} color={colors.Purple} size={25} />}
+      {Icon && <PlaneIcon name={Icon} color={colors.Purple} size={25} testID='icon' />}
       <Text style={SubtitleFont}>{Subtitle}</Text>
     </View>
   );

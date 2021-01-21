@@ -6,7 +6,7 @@ import {FlightsListConstants} from '../../../utils/Constants';
 
 const FlightsListItem = ({item}) => {
   return (
-    <View style={styles.fatherContainer}>
+    <View style={styles.fatherContainer} testID='view'>
       <GenericListItem
         ContainerStyle={styles.TopContainer}
         Title={item.originCountry}

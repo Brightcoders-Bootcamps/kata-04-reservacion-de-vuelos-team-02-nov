@@ -2,17 +2,16 @@ import React from 'react';
 import {View, FlatList} from 'react-native';
 import {styles} from '../../../styles/MyFlightsStyles';
 import FlightsListItem from './FlightsListItem';
-import {FlightsListConstants} from '../../../utils/Constants';
 
-const FlightsList = () => {
-  const renderItem = ({item}) => <FlightsListItem item={item} />;
+const FlightsList = ({flights}) => {
   return (
-    <View style={styles.ListContainer}>
+    <View style={styles.ListContainer} testID="listContainer">
       <FlatList
+        testID="flightsList"
         showsVerticalScrollIndicator={false}
-        data={FlightsListConstants.flightDataExperimental}
+        data={flights}
         keyExtractor={(flight) => flight.id}
-        renderItem={renderItem}
+        renderItem={({item}) => <FlightsListItem item={item} />}
       />
     </View>
   );
