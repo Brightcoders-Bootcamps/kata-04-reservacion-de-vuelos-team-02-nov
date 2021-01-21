@@ -11,4 +11,6 @@ describe('Render correctly', () => {
         const render = wrapper.findWhere((node) => node.prop('testID') === 'view');
         expect(render.exists()).toBeTruthy()
     })
+
 })
+

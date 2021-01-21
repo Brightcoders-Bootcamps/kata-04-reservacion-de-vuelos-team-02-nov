@@ -19,4 +19,5 @@ describe('Render correctly', () =>{
         const title = wrapper.findWhere((node) => node.prop('testID') === 'text');
         expect(title.props().children).toEqual(props.title);
       });
+      
 })

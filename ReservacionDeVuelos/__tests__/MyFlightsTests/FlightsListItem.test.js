@@ -28,4 +28,5 @@ describe('Render correctly', () => {
     const render = wrapper.findWhere((node) => node.prop('testID') === 'view');
     expect(render.props().children.length).toBe(3);
   });
+  
 });

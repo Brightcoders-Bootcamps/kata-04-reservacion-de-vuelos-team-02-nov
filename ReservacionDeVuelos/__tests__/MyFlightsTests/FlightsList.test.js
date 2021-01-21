@@ -55,4 +55,5 @@ describe('renders corretly', () => {
     const Item = flastList.props().renderItem({id: 1}).type({item: flights[0]});
     expect(Item.props.children.length).toBe(3);
   });
+  
 });

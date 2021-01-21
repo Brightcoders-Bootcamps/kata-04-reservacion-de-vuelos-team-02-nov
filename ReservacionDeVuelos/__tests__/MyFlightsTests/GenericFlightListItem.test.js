@@ -41,4 +41,5 @@ describe('Icon When there is icon', () => {
     const icon = wrapper.findWhere((node) => node.prop('testID') === 'icon');
     expect(icon.exists()).toBeTruthy();
   });
+  
 });
