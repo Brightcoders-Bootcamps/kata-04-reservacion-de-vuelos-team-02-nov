@@ -9,6 +9,9 @@ export const styles = StyleSheet.create({
   },
   titleContainer: {
     margin: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   ListContainer: {
     padding: 15,
@@ -36,7 +39,7 @@ export const styles = StyleSheet.create({
   },
   fatherContainer: {
     marginBottom: 15,
-    borderBottomWidth: 2
+    borderBottomWidth: 2,
   },
   country: {
     fontSize: 30,

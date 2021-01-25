@@ -1,19 +1,27 @@
 import React, {useEffect} from 'react';
 import {GoogleSignin} from '@react-native-community/google-signin';
-import MyFlights from './screens/MyFlights';
+import {connect} from 'react-redux';
+import {AuthConstants} from './utils/Constants';
+import {NavigationContainer} from '@react-navigation/native';
+import FlightsNavigation from './navigations/FlightsNavigation';
+import AuthNavigation from './navigations/AuthNavigation';
 
-const App = () => {
+const App = ({Auth}) => {
   useEffect(() => {
     GoogleSignin.configure({
-      webClientId:
-        '555459120478-5dvb5sj1o0996s86gg8bk69ogm7vdiu4.apps.googleusercontent.com',
+      webClientId: AuthConstants.GoogleId,
     });
   }, []);
   return (
-    <>
-      <MyFlights />
-    </>
+    <NavigationContainer>
+      {Auth.user ? <FlightsNavigation /> : <AuthNavigation />}
+    </NavigationContainer>
   );
 };
-
-export default App;
+const mapStateToProps = (state) => {
+  console.log(state.AuthReducer);
+  return {
+    Auth: state.AuthReducer,
+  };
+};
+export default connect(mapStateToProps, null)(App);

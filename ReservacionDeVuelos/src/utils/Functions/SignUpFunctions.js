@@ -75,9 +75,3 @@ export const validateInputs = (validationObject) => {
   }
 };
 
-export const signUpSubmit = (formValues) => {
-  const {name, email, password} = formValues
-  console.log(name);
-  console.log(email);
-  console.log(password);
-};
