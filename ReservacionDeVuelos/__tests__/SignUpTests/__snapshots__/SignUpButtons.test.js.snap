@@ -9,7 +9,7 @@ exports[`renders correctly snapshot 1`] = `
   }
   testID="view"
 >
-  <SignUpButton
+  <Connect(SignUpButton)
     formValues={
       Object {
         "email": "",
@@ -26,7 +26,6 @@ exports[`renders correctly snapshot 1`] = `
       }
     }
     isButtonEnabled={false}
-    signUpSubmit={[Function]}
   />
   <Text
     style={
@@ -40,7 +39,7 @@ exports[`renders correctly snapshot 1`] = `
   >
     or
   </Text>
-  <GoogleSignUp />
+  <Connect(GoogleSignUp) />
   <LoginMessage />
 </View>
 `;

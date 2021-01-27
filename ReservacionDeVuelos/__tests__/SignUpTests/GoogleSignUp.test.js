@@ -3,9 +3,11 @@ import GoogleSignUp from '../../src/components/atoms/SignUpAtoms/GoogleSignUp';
 import {shallow} from 'enzyme';
 import {SignUpConstants} from '../../src/utils/Constants';
 import GoogleIcon from '../../src/assets/images/google.png';
+import {store} from '../../redux/store';
+
 let wrapper;
 beforeEach(() => {
-  wrapper = shallow(<GoogleSignUp />);
+  wrapper = shallow(<GoogleSignUp store={store} />);
 });
 
 describe('renders correclty', () => {
