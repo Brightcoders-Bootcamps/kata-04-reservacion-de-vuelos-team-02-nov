@@ -1,9 +1,4 @@
-import {
-  SIGNUP,
-  SIGNOUT,
-  SIGNUP_FAILURE,
-  SIGNUP_GOOGLE,
-} from '../actions/AuthActions';
+import {SIGNUP, SIGNOUT, SIGNUP_FAILURE, SIGNUP_GOOGLE} from '../actions/types';
 const initalState = {
   user: null,
   message: '',

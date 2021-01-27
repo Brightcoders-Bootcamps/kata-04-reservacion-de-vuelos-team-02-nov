@@ -1,9 +1,6 @@
 import auth from '@react-native-firebase/auth';
 import {GoogleSignin} from '@react-native-community/google-signin';
-export const SIGNUP = 'SIGNUP';
-export const SIGNOUT = 'SIGNOUT';
-export const SIGNUP_FAILURE = 'SIGNUP_FAILURE';
-export const SIGNUP_GOOGLE = 'SIGNUP_GOOGLE';
+import {SIGNOUT, SIGNUP, SIGNUP_FAILURE, SIGNUP_GOOGLE} from './types';
 export const signup = (user) => {
   return {
     type: SIGNUP,
@@ -11,7 +8,7 @@ export const signup = (user) => {
   };
 };
 
-const signupFailure = (message) => {
+export const signupFailure = (message) => {
   return {
     type: SIGNUP_FAILURE,
     payload: message,
@@ -40,7 +37,7 @@ export const signupFunction = (values) => {
   };
 };
 
-const signupGoogle = (user) => {
+export const signupGoogle = (user) => {
   return {
     type: SIGNUP_GOOGLE,
     payload: user,
@@ -56,7 +53,7 @@ export const signupGoogleFunction = () => {
   };
 };
 
-const signout = () => {
+export const signout = () => {
   return {type: SIGNOUT};
 };
 

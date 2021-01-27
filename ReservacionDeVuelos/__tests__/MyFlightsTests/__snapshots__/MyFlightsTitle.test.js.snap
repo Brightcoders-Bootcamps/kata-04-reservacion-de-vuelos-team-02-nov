@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correclty snapshot 1`] = `
-<Connect(GoogleSignUp)
+exports[`Render correctly snapshot 1`] = `
+<Connect(MyFlightsTitle)
   dispatch={[Function]}
   store={
     Object {
@@ -13,5 +13,6 @@ exports[`renders correclty snapshot 1`] = `
       "subscribe": [Function],
     }
   }
+  title="title"
 />
 `;
