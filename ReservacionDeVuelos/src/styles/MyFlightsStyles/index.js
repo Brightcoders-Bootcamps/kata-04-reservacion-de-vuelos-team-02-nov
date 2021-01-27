@@ -72,4 +72,5 @@ export const styles = StyleSheet.create({
   screenContainer: {
     flexDirection: 'column',
   },
+
 });

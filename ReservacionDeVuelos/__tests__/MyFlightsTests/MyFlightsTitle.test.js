@@ -27,4 +27,5 @@ describe('Render correctly', () => {
     const title = component.findWhere((node) => node.prop('testID') === 'text');
     expect(title.props().children).toEqual(props.title);
   });
+
 });
