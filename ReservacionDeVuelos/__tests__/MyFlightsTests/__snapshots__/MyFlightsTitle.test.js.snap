@@ -1,25 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render correctly snapshot 1`] = `
-<View
-  style={
+<Connect(MyFlightsTitle)
+  dispatch={[Function]}
+  store={
     Object {
-      "margin": 10,
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
     }
   }
-  testID="view"
->
-  <Text
-    style={
-      Object {
-        "color": "#6472ee",
-        "fontSize": 35,
-        "fontWeight": "bold",
-      }
-    }
-    testID="text"
-  >
-    title
-  </Text>
-</View>
+  title="title"
+/>
 `;

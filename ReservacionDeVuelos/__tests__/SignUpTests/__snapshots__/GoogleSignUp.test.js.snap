@@ -1,56 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correclty snapshot 1`] = `
-<ForwardRef
-  style={
+<Connect(GoogleSignUp)
+  dispatch={[Function]}
+  store={
     Object {
-      "backgroundColor": "#6472ee",
-      "borderRadius": 10,
-      "flexDirection": "row",
-      "justifyContent": "center",
-      "marginBottom": 5,
-      "padding": 12,
+      "clearActions": [Function],
+      "dispatch": [Function],
+      "getActions": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
     }
   }
-  testID="GoogleSignUp"
->
-  <Image
-    source={
-      Object {
-        "testUri": "../../../src/assets/images/google.png",
-      }
-    }
-    style={
-      Array [
-        Object {
-          "height": 20,
-          "marginTop": 3,
-          "width": 20,
-        },
-        Object {
-          "marginLeft": -75,
-        },
-      ]
-    }
-    testID="GoogleIcon"
-  />
-  <Text
-    style={
-      Array [
-        Object {
-          "color": "#FFF",
-          "fontSize": 18,
-          "fontWeight": "bold",
-          "textAlign": "center",
-        },
-        Object {
-          "marginLeft": 50,
-        },
-      ]
-    }
-    testID="btnTitle"
-  >
-    Sign Up with Google
-  </Text>
-</ForwardRef>
+/>
 `;

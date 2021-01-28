@@ -3,8 +3,14 @@ import {Text, TouchableOpacity} from 'react-native';
 import {colors} from '../../../styles/Colors';
 import {styles} from '../../../styles/SignUpStyles';
 import {SignUpConstants} from '../../../utils/Constants';
+import {connect} from 'react-redux';
+import {signupFunction} from '../../../../redux/actions/AuthActions';
 
-const SignUpButton = ({isButtonEnabled, formValues, signUpSubmit}) => {
+const SignUpButton = ({
+  isButtonEnabled,
+  formValues,
+  signupFunction,
+}) => {
   return (
     <TouchableOpacity
       testID="SignUpBtn"
@@ -14,7 +20,7 @@ const SignUpButton = ({isButtonEnabled, formValues, signUpSubmit}) => {
       ]}
       onPress={() => {
         isButtonEnabled
-          ? signUpSubmit(formValues)
+          ? signupFunction(formValues)
           : alert('Invalid Credentials');
       }}>
       <Text testID="btnTitle" style={styles.btnSignupText}>
@@ -23,5 +29,7 @@ const SignUpButton = ({isButtonEnabled, formValues, signUpSubmit}) => {
     </TouchableOpacity>
   );
 };
-
-export default SignUpButton;
+const mapDispatchToProps = {
+  signupFunction,
+};
+export default connect(null, mapDispatchToProps)(SignUpButton);
