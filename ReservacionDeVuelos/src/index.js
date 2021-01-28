@@ -1,6 +1,10 @@
 import React, {useEffect} from 'react';
 import {GoogleSignin} from '@react-native-community/google-signin';
 import MyFlights from './screens/MyFlights';
+import BookingNow from './screens/BookingNow';
+import BookingTo from './screens/BookingTo';
+import BookingDate from './screens/BookingDate';
+import BookingPassengers from './screens/BookingPassengers'; 
 
 const App = () => {
   useEffect(() => {
@@ -11,7 +15,7 @@ const App = () => {
   }, []);
   return (
     <>
-      <MyFlights />
+      <BookingPassengers />
     </>
   );
 };
