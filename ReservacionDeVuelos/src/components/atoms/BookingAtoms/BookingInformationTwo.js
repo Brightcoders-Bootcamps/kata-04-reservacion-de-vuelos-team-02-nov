@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text} from 'react-native';
 import {styles} from '../../../styles/BookingStyles';
 import {colors} from '../../../styles/Colors';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/Ionicons'; 
 
 const BookingInformationTwo = () => {
   return (
@@ -19,7 +19,7 @@ const BookingInformationTwo = () => {
       <View>
         <Text style={styles.InformationFlightsTitle}>AMS</Text>
         <Text style={styles.InformationFlightsSubtitle}>Netherlands</Text>
-      </View>
+      </View> 
     </View>
   );
 };

@@ -1,16 +1,16 @@
 import React from 'react';
 import {View, Text} from 'react-native';
 import {styles} from '../../../styles/BookingStyles'
-import Calendar from '../../atoms/BookingAtoms/Calendar';
+import BookingCalendar from '../../atoms/BookingAtoms/BookingCalendar';
 import BookingButton from '../../atoms/BookingAtoms/BookingButton';
 
-const BookingCalendar = () => {
+const BookingFormCalendar = () => {
   return (
     <View style={styles.ContainerForm}>
-      <Calendar />
+      <BookingCalendar />
       <BookingButton />
     </View>
   );
 };
 
-export default BookingCalendar;
+export default BookingFormCalendar;

@@ -5,6 +5,7 @@ import BookingNow from './screens/BookingNow';
 import BookingTo from './screens/BookingTo';
 import BookingDate from './screens/BookingDate';
 import BookingPassengers from './screens/BookingPassengers'; 
+import BookingCalendar from './components/atoms/BookingAtoms/BookingCalendar'
 
 const App = () => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const App = () => {
   }, []);
   return (
     <>
-      <BookingPassengers />
+      <BookingDate />
     </>
   );
 };

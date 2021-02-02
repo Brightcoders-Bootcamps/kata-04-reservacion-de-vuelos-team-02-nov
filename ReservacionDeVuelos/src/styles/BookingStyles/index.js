@@ -48,7 +48,7 @@ export const styles = StyleSheet.create({
         flexDirection: 'column',
         justifyContent: 'space-between',
         height: '50%',
-    },
+    }, 
     BookingInformation: {
         flexDirection: 'row',
         justifyContent: 'space-between',
@@ -70,4 +70,8 @@ export const styles = StyleSheet.create({
     plane: {
         alignSelf: 'center',
     },
+    Calendar: {
+        backgroundColor: '#FFFFFF',  
+        marginTop: -50,
+    }, 
 });
