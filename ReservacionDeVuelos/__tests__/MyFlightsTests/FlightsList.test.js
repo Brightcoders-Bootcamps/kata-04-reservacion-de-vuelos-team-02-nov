@@ -1,7 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import FlightsList from '../../src/components/atoms/MyFlightsAtoms/FlightsList';
-import {View} from 'react-native';
 const flights = [
   {
     id: '1',

@@ -1,7 +1,7 @@
 import React from 'react';
-import SignUpForm from '../../src/components/molecules/SignUpForm';
+import SignUpForm from '../../src/components/molecules/SignUpMolecules/SignUpForm';
 import {shallow} from 'enzyme';
-import {SignUpConstants} from '../../src/utils/Constants';
+
 
 const formValues = {
   name: '',

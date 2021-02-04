@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {View} from 'react-native';
 import {styles} from '../styles/SignUpStyles';
-import Form from '../components/molecules/SignUpForm';
+import Form from '../components/molecules/SignUpMolecules/SignUpForm';
 import SignUpTitle from '../components/atoms/SignUpAtoms/SignUpTitle';
 import SignUpButtons from '../components/atoms/SignUpAtoms/SignUpButtons';
 import {validateInputs} from '../utils/Functions';
-const SignUp = () => {
+const SignUp = ({navigation}) => {
   const [formValues, setFormValues] = useState({
     name: '',
     email: '',
@@ -34,6 +34,7 @@ const SignUp = () => {
         validateInputs={validateInputs}
         validationValues={validationObject}
         formValues={formValues}
+        navigation={navigation}
       />
     </View>
   );

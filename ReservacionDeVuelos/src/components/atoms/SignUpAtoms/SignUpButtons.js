@@ -6,7 +6,12 @@ import {SignUpConstants} from '../../../utils/Constants';
 import SignUpButton from './SignUpButton';
 import {signUpSubmit} from '../../../utils/Functions';
 import LoginMessage from './LoginMessage';
-const SignUpButtons = ({validationValues, formValues, validateInputs}) => {
+const SignUpButtons = ({
+  validationValues,
+  formValues,
+  validateInputs,
+  navigation,
+}) => {
   const [isButtonEnabled, setIsButtonEnabled] = useState(false);
   useEffect(() => {
     const res = validateInputs(validationValues);
@@ -21,7 +26,7 @@ const SignUpButtons = ({validationValues, formValues, validateInputs}) => {
       />
       <Text style={styles.or}>{SignUpConstants.OR}</Text>
       <GoogleSignUp />
-      <LoginMessage />
+      <LoginMessage navigation={navigation} />
     </View>
   );
 };

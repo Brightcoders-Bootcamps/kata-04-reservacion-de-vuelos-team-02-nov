@@ -1,6 +1,6 @@
 import auth from '@react-native-firebase/auth';
 import {GoogleSignin} from '@react-native-community/google-signin';
-import {SIGNOUT, SIGNUP, SIGNUP_FAILURE, SIGNUP_GOOGLE} from './types';
+import {SIGNOUT, SIGNUP, SIGNUP_FAILURE, SIGNUP_GOOGLE, SIGN_IN} from './types';
 export const signup = (user) => {
   return {
     type: SIGNUP,
@@ -64,6 +64,36 @@ export const signoutFunction = () => {
       .then(() => {
         console.log('User signed out!');
         dispatch(signout());
+      });
+  };
+};
+
+export const signin = (user) => {
+  return {
+    type: SIGN_IN,
+    payload: user,
+  };
+};
+
+export const signinFunction = (values) => {
+  const {email, password} = values;
+  return (dispatch) => {
+    auth()
+      .signInWithEmailAndPassword(email, password)
+      .then((user) => {
+        dispatch(signin(user.user));
+        console.log('User account logged in!');
+      })
+      .catch((error) => {
+        if (error.code === 'auth/email-already-in-use') {
+          dispatch(signupFailure('That email address is already in use!'));
+          console.log('That email address is already in use!');
+        }
+
+        if (error.code === 'auth/invalid-email') {
+          dispatch(signupFailure('That email address is invalid!'));
+          console.log('That email address is invalid!');
+        }
       });
   };
 };

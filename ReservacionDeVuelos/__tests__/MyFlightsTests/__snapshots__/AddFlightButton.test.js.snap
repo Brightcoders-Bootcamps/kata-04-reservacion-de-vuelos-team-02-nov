@@ -2,6 +2,7 @@
 
 exports[`Render correctly snapshot 1`] = `
 <ForwardRef
+  onPress={[Function]}
   style={
     Object {
       "alignItems": "center",

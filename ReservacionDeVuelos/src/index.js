@@ -12,6 +12,7 @@ const App = ({Auth}) => {
       webClientId: AuthConstants.GoogleId,
     });
   }, []);
+  console.log(Auth);
   return (
     <NavigationContainer>
       {Auth.user ? <FlightsNavigation /> : <AuthNavigation />}
@@ -19,7 +20,6 @@ const App = ({Auth}) => {
   );
 };
 const mapStateToProps = (state) => {
-  console.log(state.AuthReducer);
   return {
     Auth: state.AuthReducer,
   };
