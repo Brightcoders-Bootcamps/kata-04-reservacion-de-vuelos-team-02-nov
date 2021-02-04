@@ -30,6 +30,18 @@ export const handleInputEmailChange = (state, setState, newValue) => {
   }
 };
 
+export const handleEmailChange = (state, setState, newValue) => {
+  setState({
+    ...state,
+    email: newValue,
+  });
+};
+export const handlePasswordChange = (state, setState, newValue) => {
+  setState({
+    ...state,
+    password: newValue,
+  });
+};
 export const handleTermsCheckboxMark = (state, setState, newValue) => {
   setState({...state, termsCheckbox: newValue});
 };
@@ -74,4 +86,3 @@ export const validateInputs = (validationObject) => {
     return false;
   }
 };
-

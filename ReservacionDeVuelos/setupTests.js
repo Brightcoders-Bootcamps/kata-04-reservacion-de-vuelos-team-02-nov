@@ -1,3 +1,4 @@
+import React, {Component} from 'react';
 import 'react-native';
 import 'jest-enzyme';
 import Adapter from 'enzyme-adapter-react-16';
@@ -10,7 +11,11 @@ jest.mock('react-native-reanimated', () => {
   Reanimated.default.call = () => {};
   return Reanimated;
 });
-
+jest.mock('@react-navigation/native', () => {
+  return () => ({
+    navigate: jest.fn(),
+  });
+});
 jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper');
 ///////////////////////////////////// jsdom
 const {JSDOM} = require('jsdom');
@@ -46,6 +51,21 @@ jest.mock('@react-native-community/google-signin', () => {
     signIn: jest.fn(),
     getCurrentUser: jest.fn(),
   });
+});
+
+jest.mock('@react-native-picker/picker', () => {
+  // eslint-disable-next-line import/no-unresolved
+  const React = require('React');
+  const PropTypes = require('prop-types');
+  return class MockPicker extends React.Component {
+    static Item = (props) => React.createElement('Item', props, props.children);
+    static propTypes = {children: PropTypes.any};
+    static defaultProps = {children: ''};
+
+    render() {
+      return React.createElement('Picker', this.props, this.props.children);
+    }
+  };
 });
 
 /////////////async storage

@@ -77,4 +77,15 @@ export const styles = StyleSheet.create({
   errorMessage: {
     color: colors.red,
   },
+  signin: {
+    margin: 10,
+    padding: 10,
+  },
+  signinContainer:{
+    marginBottom: 20,
+    marginTop: 20,
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+    height: 450
+  }
 });

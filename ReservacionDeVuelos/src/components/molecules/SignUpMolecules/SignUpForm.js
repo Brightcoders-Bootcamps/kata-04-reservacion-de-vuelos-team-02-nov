@@ -1,16 +1,16 @@
 import React from 'react';
 import {View} from 'react-native';
-import {styles} from '../../styles/SignUpStyles';
-import {SignUpConstants} from '../../utils/Constants';
-import SignUpFormInput from '../atoms/SignUpAtoms/SignUpFormInput';
-import SignUpFormCheckBox from '../atoms/SignUpAtoms/SignUpFormCheckBox';
+import {styles} from '../../../styles/SignUpStyles';
+import {SignUpConstants} from '../../../utils/Constants';
+  import SignUpFormInput from '../../atoms/SignUpAtoms/SignUpFormInput';
+import SignUpFormCheckBox from '../../atoms/SignUpAtoms/SignUpFormCheckBox';
 import {
   handleInputNameChange,
   handleInputEmailChange,
   handleInputPasswordChange,
   handleTermsCheckboxMark,
   handleUpdatesCheckboxMark,
-} from '../../utils/Functions';
+} from '../../../utils/Functions';
 const SignUpForm = (props) => {
   const {formValues, setFormValues} = props;
   return (

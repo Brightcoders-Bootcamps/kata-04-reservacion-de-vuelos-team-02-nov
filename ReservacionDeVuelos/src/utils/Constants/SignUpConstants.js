@@ -13,7 +13,10 @@ const LogIn = 'Log In';
 const nameErrorMessage = ' must be at least 3 characters.';
 const emailErrorMessage = 'invalid Email format';
 const passwordErrorMessage = 'must be at least 8 characters';
-const OR = 'or'
+const OR = 'or';
+const SignIn = 'Sign In';
+const SignUp = 'Sign Up';
+const noAccountMsg = 'Don´t have an account?';
 export const SignUpConstants = {
   SignUpTitle,
   NameInputTitle,
@@ -29,6 +32,8 @@ export const SignUpConstants = {
   nameErrorMessage,
   emailErrorMessage,
   passwordErrorMessage,
-  OR
-  
+  OR,
+  SignIn,
+  noAccountMsg,
+  SignUp,
 };

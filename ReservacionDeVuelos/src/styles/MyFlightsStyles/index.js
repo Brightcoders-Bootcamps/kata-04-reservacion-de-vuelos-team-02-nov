@@ -72,5 +72,15 @@ export const styles = StyleSheet.create({
   screenContainer: {
     flexDirection: 'column',
   },
-
+  BookingButton: {
+    backgroundColor: colors.Purple,
+    padding: 12,
+    borderRadius: 10,
+    justifyContent: 'center',
+  },
+  noFlights:{
+    fontSize: 25,
+    textAlign: 'center',
+    color: colors.Purple
+  }
 });

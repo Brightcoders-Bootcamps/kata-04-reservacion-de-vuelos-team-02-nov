@@ -12,7 +12,6 @@ describe('Render correctly', () => {
   let store;
   store = mockStore({user: null});
   const user = {name: 'juan', id: 1};
-  const expectedState = {user: {name: 'juan', id: 1}};
   test('signup action is working as expected', async () => {
     const a = await store.dispatch(signup(user));
     const expectedActions = [{type: 'SIGNUP', payload: {name: 'juan', id: 1}}];
